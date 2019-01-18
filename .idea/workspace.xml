@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac02424d-6545-4388-9a70-a9f04e27dba5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clases_HDT1.java" beforeDir="false" afterPath="$PROJECT_DIR$/clases_HDT1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +18,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/clases_HDT1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+            <state relative-caret-position="3621">
+              <caret line="217" column="31" lean-forward="true" selection-start-line="217" selection-start-column="31" selection-end-line="217" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#5101#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -37,7 +39,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="y" value="98" />
     <option name="width" value="2060" />
     <option name="height" value="1065" />
@@ -92,16 +94,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1648" height="931" extended-state="0" />
+    <frame x="-7" y="-7" width="1653" height="898" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49812266" visible="true" weight="0.21347608" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4986945" visible="true" weight="0.21280603" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
-      <window_info active="true" id="Favorites" order="6" sideWeight="0.50187737" side_tool="true" visible="true" weight="0.21347608" />
+      <window_info active="true" id="Favorites" order="6" sideWeight="0.50130546" side_tool="true" visible="true" weight="0.21280603" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -125,8 +127,11 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/clases_HDT1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        <state relative-caret-position="3621">
+          <caret line="217" column="31" lean-forward="true" selection-start-line="217" selection-start-column="31" selection-end-line="217" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#5101#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
