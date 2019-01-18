@@ -8,6 +8,15 @@
 import java.util.List;
 
 interface Radio{
+	// todos los metodos del interface
+	public void toggle();
+	public boolean getState();
+	public void changeFrequency();
+	public double getStation();
+	public void changeStation(boolean up);
+	public boolean getFrequency();
+	public void saveStation(int numButton);
+	public void changeStationButton(int numButton);
 
 
 }
@@ -32,6 +41,8 @@ public class MyRadio implements Radio{
 		this.is_Am = null;
 		this.buttons = new float [12];
 	}
+
+	@Override
 	public void toggle(){
 		//encenderlo
 		if (this.status == false) {
@@ -52,29 +63,86 @@ public class MyRadio implements Radio{
 	public void changeFrequency(){
 		if (this.getState() != false) {
 			if (this.getStation() == true) {
-				
+				this.is_Am = false;
+			}
+			else{
+				this.is_Am = true;
 			}
 		}
 	}
 	public void changeStation(boolean up){
+		if (up == true) {
+			if (this.getFrequency() != false) {
+				if (this.getStation() > limitSuperiorAm) {
+					this.station = limitInferiorAm;
+				}
+				else if (this.getStation() < limitInferiorAm) {
+					this.station = limitSuperiorAm;
+				}
+				else{
+					this.station += changeAmFrequency;
+				}
 
+			}
+			else{
+				if (this.getStation() > limitSuperiorFm) {
+					this.station = limitInferiorFm;
+				}
+				else if (this.getStation() < limitInferiorFm) {
+					this.station = limitSuperiorFm;
+				}
+				else{
+					this.station += changeFmFrequency;
+				}
+			}
+		}
+		else{
+			if (this.getFrequency() != false) {
+				if (this.getStation() > limitSuperiorAm) {
+					this.station = limitInferiorAm;
+				}
+				else if (this.getStation() < limitInferiorAm) {
+					this.station = limitSuperiorAm;
+				}
+				else{
+					this.station -= changeAmFrequency;
+				}
+
+				}
+			}
+			else{
+				if (this.getStation() > limitSuperiorFm) {
+					this.station = limitInferiorFm;
+				else if (this.getStation() < limitInferiorFm) {
+					this.station = limitSuperiorFm;
+				}
+				else{
+					this.station -= changeFmFrequency;
+				}
+			}
+		}
 	}
 	public boolean getFrequency(){
 		return this.frequency;
 	}
 
 	public void saveStation(int numButton){
+		this.buttons[numButton-1] = this.station;
 
 	}
 	public void changeStationButton(int numButton){
-
+		this.station = this.buttons[numButton-1];
+		if (this.station > limitInferiorAm && this.station < limitSuperiorAm) {
+			this.is_Am = true;
+		}
+		else if (this.station > limitInferiorFm && this.station < limitSuperiorFm) {
+			this.is_Am = false;
+		}
 	}
 	public double getStation(){
 		return this.is_Am;
 	}
-	public String toString(){
 
-	}
 
 	
 }
