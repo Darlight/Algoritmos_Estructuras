@@ -25,7 +25,7 @@
 	/**
 	 * {@inheritDoc}
 	 */
-	@Override
+	//@Override
 	public void toggle(){
 		//encenderlo
 		if (this.status == false) {
@@ -54,7 +54,7 @@
 	 */
 	public void changeFrequency(){
 		if (this.getState() != false) {
-			if (this.is_Am() == true) {
+			if (this.is_Am == true) {
 				this.is_Am = false;
 				this.station = limitInferiorFm;
 			}
