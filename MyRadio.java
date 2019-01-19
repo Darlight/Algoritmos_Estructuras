@@ -1,4 +1,4 @@
-public class MyRadio implements Radio{
+﻿public class MyRadio implements Radio{
 	private static double changeFmFrequency = 0.2;
 	private static double changeAmFrequency = 10;
 	private static double limitSuperiorFm = 107.9;
@@ -54,11 +54,13 @@ public class MyRadio implements Radio{
 	 */
 	public void changeFrequency(){
 		if (this.getState() != false) {
-			if (this.getFrequency() == true) {
+			if (this.is_Am() == true) {
 				this.is_Am = false;
+				this.station = limitInferiorFm;
 			}
 			else{
 				this.is_Am = true;
+				this.station = limitInferiorAm;
 			}
 		}
 	}
