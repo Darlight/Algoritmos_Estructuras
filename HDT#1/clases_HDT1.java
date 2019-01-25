@@ -17,11 +17,12 @@
  * @version 1.0
  * @since   2019-01-18
  */
-import java.util.List;
+
 
 /**
  *Interfaz que permite ser impelementada en un objeto tipo Radio
  */
+
 interface Radio{
 	/**
 	 * Permite cambiar el estado de la radio (ON/OFF)

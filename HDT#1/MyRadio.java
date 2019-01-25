@@ -6,7 +6,7 @@
 	private static double limitSuperiorAm = 1610;
 	private static double limitInferiorAm = 530;
 
-	private double station; // Tomar en cuenta los numeros
+	private double station; 
 	private boolean is_Am;
 	private double [] buttons;
 	private boolean status;
@@ -25,7 +25,6 @@
 	/**
 	 * {@inheritDoc}
 	 */
-	//@Override
 	public void toggle(){
 		//encenderlo
 		if (this.status == false) {
@@ -54,13 +53,11 @@
 	 */
 	public void changeFrequency(){
 		if (this.getState() != false) {
-			if (this.is_Am == true) {
+			if (this.getFrequency() == true) {
 				this.is_Am = false;
-				this.station = limitInferiorFm;
 			}
 			else{
 				this.is_Am = true;
-				this.station = limitInferiorAm;
 			}
 		}
 	}
