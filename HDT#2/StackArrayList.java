@@ -14,12 +14,11 @@ public class StackArrayList<E> implements Stack<E> {
     }
 
     public E pop() {
-        return data.remove(size() - 1);
+        return data.remove((data.size()-1));
     }
 
-    public E peek()
-    {
-        return data.get(size() - 1);
+    public E peek() {
+        return data.get((data.size()-1));
     }
 
     public int size()

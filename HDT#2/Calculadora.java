@@ -24,5 +24,4 @@ public class Calculadora implements Calculator{
         }
         return resultado;
     }
-
 }
