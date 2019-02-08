@@ -1,7 +1,7 @@
 /*
 Autores:    Mario Perdomo 18029
             Josue Sagastume 18173
-            Grupo:
+            Grupo: 12
 
 Fecha: 07 de febrero de 2019
 Proposito:
@@ -10,7 +10,7 @@ Proposito:
         Extraido de: http://www.java2novice.com/java-sorting-algorithms/quick-sort/
          */
 public class QuickSort implements Comparable{
-    private void quickSort(int lowerIndex, int higherIndex) {
+    private void quickSort(Comparable[] numbers) {
 
         int i = lowerIndex;
         int j = higherIndex;

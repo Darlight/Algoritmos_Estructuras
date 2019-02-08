@@ -1,7 +1,7 @@
 /*
 Autores:    Mario Perdomo 18029
             Josue Sagastume 18173
-            Grupo:
+            Grupo: 12
 
 Fecha: 07 de febrero de 2019
 Proposito:
@@ -10,7 +10,7 @@ Proposito:
     Extraido de: http://www.java2novice.com/java-sorting-algorithms/merge-sort/
      */
 public class MergeSort implements Comparable{
-    public int[] mergeSort(int[] arr) {
+    public int[] mergeSort(Comparable[] numbers) {
 
         if (arr[0] <) {
             int middle = lowerIndex + (higherIndex - lowerIndex) / 2;

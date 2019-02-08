@@ -1,13 +1,13 @@
 /*
 Autores:    Mario Perdomo 18029
             Josue Sagastume 18173
-            Grupo:
+            Grupo: 12
 
 Fecha: 07 de febrero de 2019
 Proposito:
  */
 public class GnomeSort implements Comparable{
-    public int[] gnomeSort(int[] arr) {
+    public int[] gnomeSort(Comparable[] numbers) {
         int index = 0
         while (index < length) {
             if (index == 0)

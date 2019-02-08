@@ -1,7 +1,7 @@
 /*
 Autores:    Mario Perdomo 18029
             Josue Sagastume 18173
-            Grupo:
+            Grupo: 12
 
 Fecha: 07 de febrero de 2019
 Proposito:
@@ -53,7 +53,7 @@ public class RadizSort implements Comparable{
 
     // The main function to that sorts arr[] of size n using
     // Radix Sort
-    static void radixsort(int arr[], int n)
+    static void radixsort(Comparable[] numbers)
     {
         // Find the maximum number to know number of digits
         int m = getMax(arr, n);
