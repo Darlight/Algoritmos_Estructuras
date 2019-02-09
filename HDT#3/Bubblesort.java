@@ -9,8 +9,8 @@ Proposito:
 public class BubbleSort implements Comparable{
 
     public int[] bubbleSort(Comparable[] numbers) {
-        for (int i = 0; i < length-1; i++)
-            for (int j = 0; j < length-i-1; j++)
+        for (int i = 0; i < (numbers.length)-1; i++)
+            for (int j = 0; j < (numbers.length-i)-1; j++)
                 if (arr[j] > arr[j+1])
                 {
                     // reemplaza arr[j+1] y arr[i]
