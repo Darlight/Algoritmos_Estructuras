@@ -36,8 +36,16 @@ public class MainSorters {
 
         texto = archivo2.leerTxt("C:\\Users\\josue\\Desktop\\Archivo.txt");
         String[] lista2 = texto.split(" ");
-        for (int i = 0; i<lista2.length;i++){
-            System.out.println(lista2[i]);
+
+        ArrayList<Integer> lista3 = new ArrayList<Integer>();
+
+        for (int i = 0; i < lista2.length; i++){
+            try{
+                lista3.add(Integer.valueOf(lista2[i]));
+            } catch(Exception e){
+                System.out.println("");
+            }
+
         }
     }
 }

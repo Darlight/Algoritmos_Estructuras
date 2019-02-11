@@ -26,7 +26,7 @@ public class RadixSort{
         for (int exp = 1; m/exp > 0; exp *= 10)
             countSort(numbers, n, exp);
     }
-    static int getMax(int numbers[], int n)
+    static int getMax(Comparable[] numbers, int n)
     {
         int mx = numbers[0];
         for (int i = 1; i < n; i++)
@@ -37,7 +37,7 @@ public class RadixSort{
 
     // A function to do counting sort of arr[] according to
     // the digit represented by exp.
-    static void countSort(int numbers[], int n, int exp)
+    static void countSort(Comparable[] numbers, int n, int exp)
     {
         int output[] = new int[n]; // output array
         int i;

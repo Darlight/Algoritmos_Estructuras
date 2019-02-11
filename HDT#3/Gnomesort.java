@@ -7,21 +7,21 @@ Fecha: 07 de febrero de 2019
 Proposito:
  */
 public class GnomeSort implements Comparable{
-    public int[] gnomeSort(Comparable[] numbers) {
-        int index = 0
-        while (index < length) {
+    public Comparable[] gnomeSort(Comparable[] numbers) {
+        int index = 0;
+        while (index < numbers.length) {
             if (index == 0)
                 index++;
-            if (arr[index] >= arr[index - 1])
+            if ((int)numbers[index] >= (int)numbers[index - 1]){
                 index++;
-            else {
-                int temp = 0;
-                temp = this.arr[index];
-                this.arr[index] = this.arr[index - 1];
-                this.arr[index - 1] = temp;
+            }else {
+                Comparable temp = 0;
+                temp = (int)numbers[index];
+                numbers[index] = numbers[index - 1];
+                (int)(numbers[index - 1]) = temp;
                 index--;
             }
         }
-        return arr[];
+        return this.numbers[];
     }
 }
